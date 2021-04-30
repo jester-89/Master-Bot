@@ -27,7 +27,7 @@ module.exports = class SpeedrunBasicCommand extends Command {
       ]
     });
   }
-
+  //Add three
   async run(message, { query }) {
     const respInitial = await fetch(
       `https://www.speedrun.com/api/v1/games?name=${query}`

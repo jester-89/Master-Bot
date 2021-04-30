@@ -122,7 +122,7 @@ client.on('guildMemberAdd', async member => {
       welcomeMsgSettings.imageHeight
     );
     var ctx = canvas.getContext('2d');
-
+    // Add five
     // Background Image Options
     var background = await Canvas.loadImage(welcomeMsgSettings.wallpaperURL);
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
@@ -162,7 +162,7 @@ client.on('guildMemberAdd', async member => {
         canvas.height / 3.5
       );
     }
-
+    
     // Lower Text Options Defaults
     if (welcomeMsgSettings.bottomImageText == 'default') {
       ctx.font = applyText(canvas, `${member.displayName}!`);
