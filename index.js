@@ -200,7 +200,7 @@ client.on('guildMemberAdd', async member => {
     ctx.arc(125, 125, 100, 0, Math.PI * 2, true); // Shape option (circle)
     ctx.closePath();
     ctx.clip();
-
+    //Add one
     const avatar = await Canvas.loadImage(
       member.user.displayAvatarURL({
         format: 'jpg'
